@@ -29,6 +29,7 @@ KeyboardLayout {
                 key: Qt.Key_9
                 text: "9"
             }
+            FillerKey {}
             BackspaceKey {}
         }
         KeyboardRow {
@@ -44,6 +45,7 @@ KeyboardLayout {
                 key: Qt.Key_6
                 text: "6"
             }
+            FillerKey {}
             Key {
                 text: " "
                 displayText: "\u2423"
@@ -66,6 +68,10 @@ KeyboardLayout {
                 key: Qt.Key_3
                 text: "3"
             }
+            Key {
+                key: Qt.Key_Up
+                text: "🡑"
+            }
             HideKeyboardKey {}
         }
         KeyboardRow {
@@ -81,6 +87,10 @@ KeyboardLayout {
                 // "." in case it is an unhandled different result
                 key: Qt.locale().decimalPoint === "," ? Qt.Key_Comma : Qt.Key_Period
                 text: Qt.locale().decimalPoint === "," ? "," : "."
+            }
+            Key {
+                key: Qt.Key_Up
+                text: "🡓"
             }
             EnterKey {}
         }
